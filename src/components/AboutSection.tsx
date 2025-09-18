@@ -13,23 +13,23 @@ const AboutSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          <div className="relative perspective-1000">
-            <Card className="card-3d hover:scale-105 transition-transform duration-500 overflow-hidden">
-              <CardContent className="p-0">
-                <div className="relative">
-                  <img 
-                    src={profileImage} 
-                    alt="E.B.K. Sai Kumar" 
-                    className="w-full h-[500px] object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent" />
-                  <div className="absolute bottom-6 left-6 right-6">
-                    <h3 className="text-2xl font-bold text-white mb-2">E.B.K. Sai Kumar</h3>
-                    <p className="text-primary-foreground/80">B.Tech 2nd Year</p>
-                  </div>
+          <div className="relative perspective-1000 flex justify-center">
+            <div className="relative">
+              <div className="w-80 h-80 rounded-full overflow-hidden card-3d hover:scale-105 transition-transform duration-500 border-4 border-primary/20">
+                <img 
+                  src={profileImage} 
+                  alt="E.B.K. Sai Kumar" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-t from-primary/20 to-transparent" />
+              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 text-center">
+                <div className="card-3d backdrop-glow px-6 py-3 rounded-full">
+                  <h3 className="text-xl font-bold text-primary mb-1">E.B.K. Sai Kumar</h3>
+                  <p className="text-sm text-muted-foreground">B.Tech 2nd Year</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
 
           <div className="space-y-8">

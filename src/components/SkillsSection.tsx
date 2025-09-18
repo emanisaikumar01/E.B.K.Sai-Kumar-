@@ -73,30 +73,39 @@ const SkillsSection = () => {
           })}
         </div>
 
-        {/* Skill Level Indicators */}
-        <div className="mt-16 max-w-4xl mx-auto">
+        {/* Skill Mastery Showcase */}
+        <div className="mt-16 max-w-5xl mx-auto">
           <div className="card-3d p-8 backdrop-glow">
-            <h3 className="text-2xl font-bold mb-8 text-center text-primary">Proficiency Levels</h3>
-            <div className="grid md:grid-cols-2 gap-8">
+            <h3 className="text-2xl font-bold mb-8 text-center text-primary">Skill Mastery</h3>
+            <div className="grid md:grid-cols-3 gap-8">
               {[
-                { skill: 'Python', level: 85 },
-                { skill: 'JavaScript', level: 75 },
-                { skill: 'HTML/CSS', level: 90 },
-                { skill: 'SQL', level: 60 },
-                { skill: 'Java', level: 70 },
-                { skill: 'Cybersecurity', level: 65 }
+                { skill: 'Python', mastery: 'Advanced', stars: 4, color: 'text-primary' },
+                { skill: 'HTML/CSS', mastery: 'Expert', stars: 5, color: 'text-accent' },
+                { skill: 'JavaScript', mastery: 'Proficient', stars: 4, color: 'text-secondary' },
+                { skill: 'Java', mastery: 'Intermediate', stars: 3, color: 'text-primary' },
+                { skill: 'SQL', mastery: 'Intermediate', stars: 3, color: 'text-accent' },
+                { skill: 'Cybersecurity', mastery: 'Learning', stars: 3, color: 'text-secondary' }
               ].map((item) => (
-                <div key={item.skill} className="space-y-2">
-                  <div className="flex justify-between text-sm">
-                    <span className="font-medium">{item.skill}</span>
-                    <span className="text-muted-foreground">{item.level}%</span>
+                <div key={item.skill} className="text-center p-6 rounded-xl bg-muted/10 hover:bg-muted/20 transition-colors group">
+                  <h4 className={`text-lg font-bold mb-2 ${item.color} group-hover:scale-110 transition-transform`}>
+                    {item.skill}
+                  </h4>
+                  <div className="flex justify-center mb-3">
+                    {[...Array(5)].map((_, index) => (
+                      <div
+                        key={index}
+                        className={`w-3 h-3 rounded-full mx-1 transition-all duration-300 ${
+                          index < item.stars 
+                            ? `bg-current ${item.color} animate-pulse` 
+                            : 'bg-muted'
+                        }`}
+                        style={{ animationDelay: `${index * 0.1}s` }}
+                      />
+                    ))}
                   </div>
-                  <div className="h-2 bg-muted rounded-full overflow-hidden">
-                    <div 
-                      className="h-full bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-1000 ease-out"
-                      style={{ width: `${item.level}%` }}
-                    />
-                  </div>
+                  <p className="text-sm text-muted-foreground font-medium">
+                    {item.mastery}
+                  </p>
                 </div>
               ))}
             </div>
