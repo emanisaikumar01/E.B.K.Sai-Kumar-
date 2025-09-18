@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { Github, Linkedin, Instagram, Download } from 'lucide-react';
+import { Github, Linkedin, Instagram } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -27,10 +27,6 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-            <Button size="lg" className="group hover:scale-110 transition-transform glow-effect">
-              <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-              Download Resume
-            </Button>
             <div className="flex gap-4">
               <Button variant="outline" size="lg" className="hover:scale-110 transition-transform" asChild>
                 <a href="https://github.com/emanisaikumar01" target="_blank" rel="noopener noreferrer">

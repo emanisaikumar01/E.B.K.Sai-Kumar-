@@ -161,13 +161,10 @@ const ContactSection = () => {
               Whether it's a new project, internship opportunity, or just a tech conversation, 
               I'm always excited to connect with fellow developers and innovators.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Button size="lg" className="group hover:scale-110 transition-transform glow-effect">
                 <Mail className="mr-2 h-5 w-5 group-hover:animate-bounce" />
                 Start a Conversation
-              </Button>
-              <Button variant="outline" size="lg" className="hover:scale-110 transition-transform">
-                Download Resume
               </Button>
             </div>
           </div>
