@@ -27,6 +27,7 @@ const AboutSection = () => {
                 <div className="card-3d backdrop-glow px-6 py-3 rounded-full">
                   <h3 className="text-xl font-bold text-primary mb-1">E.B.K. Sai Kumar</h3>
                   <p className="text-sm text-muted-foreground">B.Tech 2nd Year</p>
+                  <p className="text-xs text-accent font-medium">ICFAI Foundation for Higher Education</p>
                 </div>
               </div>
             </div>

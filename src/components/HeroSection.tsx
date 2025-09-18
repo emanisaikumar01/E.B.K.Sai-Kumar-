@@ -19,6 +19,8 @@ const HeroSection = () => {
           </h1>
           <div className="text-2xl md:text-3xl mb-8 text-muted-foreground font-light">
             <span className="typewriter-text">B.Tech 2nd Year Student</span>
+            <br />
+            <span className="text-lg text-primary font-medium">ICFAI Foundation for Higher Education</span>
           </div>
           <p className="text-xl md:text-2xl mb-12 max-w-2xl mx-auto text-foreground/80 leading-relaxed">
             Passionate about <span className="text-primary font-semibold">AI & Machine Learning</span>, 
