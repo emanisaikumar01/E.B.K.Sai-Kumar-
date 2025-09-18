@@ -79,18 +79,18 @@ const SkillsSection = () => {
             <h3 className="text-2xl font-bold mb-8 text-center text-primary">Skill Mastery</h3>
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                { skill: 'Python', mastery: 'Advanced', stars: 4, color: 'text-primary' },
-                { skill: 'HTML/CSS', mastery: 'Expert', stars: 5, color: 'text-accent' },
-                { skill: 'JavaScript', mastery: 'Proficient', stars: 4, color: 'text-secondary' },
-                { skill: 'Java', mastery: 'Intermediate', stars: 3, color: 'text-primary' },
-                { skill: 'SQL', mastery: 'Intermediate', stars: 3, color: 'text-accent' },
-                { skill: 'Cybersecurity', mastery: 'Learning', stars: 3, color: 'text-secondary' }
+                { skill: 'Python', stars: 4, color: 'text-primary' },
+                { skill: 'HTML/CSS', stars: 5, color: 'text-accent' },
+                { skill: 'JavaScript', stars: 4, color: 'text-secondary' },
+                { skill: 'Java', stars: 3, color: 'text-primary' },
+                { skill: 'SQL', stars: 3, color: 'text-accent' },
+                { skill: 'Cybersecurity', stars: 3, color: 'text-secondary' }
               ].map((item) => (
                 <div key={item.skill} className="text-center p-6 rounded-xl bg-muted/10 hover:bg-muted/20 transition-colors group">
-                  <h4 className={`text-lg font-bold mb-2 ${item.color} group-hover:scale-110 transition-transform`}>
+                  <h4 className={`text-lg font-bold mb-4 ${item.color} group-hover:scale-110 transition-transform`}>
                     {item.skill}
                   </h4>
-                  <div className="flex justify-center mb-3">
+                  <div className="flex justify-center">
                     {[...Array(5)].map((_, index) => (
                       <div
                         key={index}
@@ -103,9 +103,6 @@ const SkillsSection = () => {
                       />
                     ))}
                   </div>
-                  <p className="text-sm text-muted-foreground font-medium">
-                    {item.mastery}
-                  </p>
                 </div>
               ))}
             </div>
