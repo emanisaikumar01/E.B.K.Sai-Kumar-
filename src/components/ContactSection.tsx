@@ -94,6 +94,13 @@ const ContactSection = () => {
                 <div className="flex items-center gap-4 p-4 rounded-lg bg-muted/20 hover:bg-muted/30 transition-colors">
                   <Phone className="h-5 w-5 text-secondary" />
                   <div>
+                    <p className="font-medium">Phone</p>
+                    <p className="text-sm text-muted-foreground">9515654301</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 p-4 rounded-lg bg-muted/20 hover:bg-muted/30 transition-colors">
+                  <Phone className="h-5 w-5 text-primary" />
+                  <div>
                     <p className="font-medium">Availability</p>
                     <p className="text-sm text-muted-foreground">Open for opportunities</p>
                   </div>
