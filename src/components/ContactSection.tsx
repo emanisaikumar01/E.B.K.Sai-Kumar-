@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Github, Linkedin, Instagram, Phone, MapPin, Send } from 'lucide-react';
+import { Linkedin, Instagram, Phone, MapPin, Send } from 'lucide-react';
 
 const ContactSection = () => {
   const socialLinks = [
@@ -12,13 +12,6 @@ const ContactSection = () => {
       icon: Linkedin,
       color: 'text-blue-500 hover:text-blue-400',
       description: 'Professional networking'
-    },
-    {
-      name: 'GitHub',
-      url: 'https://github.com/emanisaikumar01',
-      icon: Github,
-      color: 'text-white hover:text-gray-300',
-      description: 'Code repositories'
     },
     {
       name: 'Instagram',
@@ -96,13 +89,6 @@ const ContactSection = () => {
                   <div>
                     <p className="font-medium">Phone</p>
                     <p className="text-sm text-muted-foreground">9515654301</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4 p-4 rounded-lg bg-muted/20 hover:bg-muted/30 transition-colors">
-                  <Phone className="h-5 w-5 text-primary" />
-                  <div>
-                    <p className="font-medium">Availability</p>
-                    <p className="text-sm text-muted-foreground">Open for opportunities</p>
                   </div>
                 </div>
               </CardContent>
