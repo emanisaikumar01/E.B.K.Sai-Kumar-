@@ -115,7 +115,7 @@ const CertificationsSection = () => {
                 <div className="text-sm text-muted-foreground">Skills Gained</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-destructive mb-2">2024</div>
+                <div className="text-3xl font-bold text-destructive mb-2">2025</div>
                 <div className="text-sm text-muted-foreground">Recent Year</div>
               </div>
             </div>

@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Github, Linkedin, Instagram, Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Github, Linkedin, Instagram, Phone, MapPin, Send } from 'lucide-react';
 
 const ContactSection = () => {
   const socialLinks = [
@@ -50,15 +50,9 @@ const ContactSection = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="text-sm font-medium text-foreground mb-2 block">Name</label>
-                    <Input placeholder="Your name" className="backdrop-glow" />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium text-foreground mb-2 block">Email</label>
-                    <Input type="email" placeholder="your.email@example.com" className="backdrop-glow" />
-                  </div>
+                <div>
+                  <label className="text-sm font-medium text-foreground mb-2 block">Name</label>
+                  <Input placeholder="Your name" className="backdrop-glow" />
                 </div>
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">Subject</label>
@@ -90,13 +84,6 @@ const ContactSection = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="flex items-center gap-4 p-4 rounded-lg bg-muted/20 hover:bg-muted/30 transition-colors">
-                  <Mail className="h-5 w-5 text-primary" />
-                  <div>
-                    <p className="font-medium">Email</p>
-                    <p className="text-sm text-muted-foreground">saikumar@example.com</p>
-                  </div>
-                </div>
                 <div className="flex items-center gap-4 p-4 rounded-lg bg-muted/20 hover:bg-muted/30 transition-colors">
                   <MapPin className="h-5 w-5 text-accent" />
                   <div>
@@ -163,7 +150,7 @@ const ContactSection = () => {
             </p>
             <div className="flex justify-center">
               <Button size="lg" className="group hover:scale-110 transition-transform glow-effect">
-                <Mail className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+                <Send className="mr-2 h-5 w-5 group-hover:animate-bounce" />
                 Start a Conversation
               </Button>
             </div>
